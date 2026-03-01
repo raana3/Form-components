@@ -1,0 +1,102 @@
+
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #dbeafe, #939afd);
+font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family:'Gill Sans';
+  font-size: 50px;
+    color: #491eaf;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #471e8a;
+}
+
+input[type="text"], input[type="date"], input[type="email"] {
+margin-top: 5px;
+padding: 8px;
+border-radius: 10px;
+border: 1px solid #939ffd;
+outline: none;
+}
+
+input:focus {
+  border-color: #5625eb; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+.gender, .nationality {
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.gender .options {
+  cursor: pointer;
+}
+
+.confirm {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  color: #939ffd;
+  cursor: pointer;
+} 
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #939afd;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #491eaf;
+}
+
+.success-msg {
+  background-color: #d1fae5;
+  color: #065f56;
+  padding: 12px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
